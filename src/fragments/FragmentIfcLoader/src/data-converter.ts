@@ -2,8 +2,8 @@ import * as THREE from "three";
 import { BufferGeometry } from "three";
 import * as WEBIFC from "web-ifc";
 import * as FRAGS from "bim-fragment";
-import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils";
 import { IfcAlignmentData } from "bim-fragment";
+import { mergeBufferGeometries } from "three-stdlib";
 import { IfcCategories, IfcItemsCategories } from "../../../ifc/ifc-categories";
 import { IfcJsonExporter } from "../../../ifc/IfcJsonExporter";
 import { SpatialStructure } from "./spatial-structure";
@@ -293,8 +293,10 @@ export class DataConverter {
         sortedIDs.push(id);
         const geometries = geometriesByItem[id];
         if (geometries.length) {
-          const merged = mergeGeometries(geometries);
-          sortedGeometries.push(merged);
+          const merged = mergeBufferGeometries(geometries);
+          if (merged) {
+            sortedGeometries.push(merged);
+          }
         } else {
           sortedGeometries.push(geometries[0]);
         }
