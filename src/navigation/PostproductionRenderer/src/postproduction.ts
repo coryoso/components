@@ -1,9 +1,11 @@
 import * as THREE from "three";
-import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer";
-import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass";
+import {
+  EffectComposer,
+  RenderPass,
+  ShaderPass,
+  GammaCorrectionShader,
+} from "three-stdlib";
 import { N8AOPass } from "n8ao";
-import { ShaderPass } from "three/examples/jsm/postprocessing/ShaderPass";
-import { GammaCorrectionShader } from "three/examples/jsm/shaders/GammaCorrectionShader";
 import { Components } from "../../../core";
 import { OrthoPerspectiveCamera } from "../../OrthoPerspectiveCamera";
 import { CustomEffectsPass } from "./custom-effects-pass";
@@ -105,6 +107,7 @@ export class Postproduction {
     this._renderTarget.dispose();
     this._depthTexture?.dispose();
     await this._customEffects?.dispose();
+    // @ts-ignore
     this._gammaPass?.dispose();
     this._n8ao?.dispose();
     this.excludedItems.clear();

@@ -1,6 +1,5 @@
 import * as THREE from "three";
-import { HorizontalBlurShader } from "three/examples/jsm/shaders/HorizontalBlurShader";
-import { VerticalBlurShader } from "three/examples/jsm/shaders/VerticalBlurShader";
+import { HorizontalBlurShader, VerticalBlurShader } from "three-stdlib";
 import { Component, Disposable, Event } from "../../base-types";
 import { Components, Disposer, ToolComponent } from "../../core";
 

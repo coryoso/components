@@ -1073,6 +1073,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/draco3d@npm:^1.4.0":
+  version: 1.4.9
+  resolution: "@types/draco3d@npm:1.4.9"
+  checksum: 731706bc0d761f0d5f75a33437477db2fab02999d29a4b9eab010ff5dc1a1a511527d84790b02e32ead94a098687ed09c8d449bf8d57cce2ed448e4daed5c214
+  languageName: node
+  linkType: hard
+
 "@types/earcut@npm:^2.1.1":
   version: 2.1.4
   resolution: "@types/earcut@npm:2.1.4"
@@ -1218,6 +1225,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/offscreencanvas@npm:^2019.6.4":
+  version: 2019.7.3
+  resolution: "@types/offscreencanvas@npm:2019.7.3"
+  checksum: 53a394a65ae08eddff6e0a2a8db72abecc94f41fc8fee166e8900075d3c1ca32540ddf5b4836c37357d53a0253a03fea4d781b2db543e3f08bc1cdc2dc0fefb5
+  languageName: node
+  linkType: hard
+
 "@types/prettier@npm:^2.1.5":
   version: 2.7.3
   resolution: "@types/prettier@npm:2.7.3"
@@ -1259,7 +1273,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/webxr@npm:*":
+"@types/webxr@npm:*, @types/webxr@npm:^0.5.2":
   version: 0.5.10
   resolution: "@types/webxr@npm:0.5.10"
   checksum: 4a6b96736736b9c5e59fb31d41a7f2a5a0598d5e837335bea5af70446a94ab1c45543cc6fc341e07588f767f8e46aad7ddab9235919b40e288e9ae1f6b3fd559
@@ -2682,6 +2696,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"draco3d@npm:^1.4.1":
+  version: 1.5.6
+  resolution: "draco3d@npm:1.5.6"
+  checksum: ae1080c02c5bb95b3e4ce6bbd2b8c61a30e44ccc421648acdf5d261c3eb980210d7da2a562b2009bcf782d5193cbafc722e153ba8aafbaf30a072946007d2183
+  languageName: node
+  linkType: hard
+
 "dxf-writer@npm:^1.18.4":
   version: 1.18.4
   resolution: "dxf-writer@npm:1.18.4"
@@ -3324,7 +3345,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fflate@npm:~0.6.9":
+"fflate@npm:^0.6.9, fflate@npm:~0.6.9":
   version: 0.6.10
   resolution: "fflate@npm:0.6.10"
   checksum: 96384bc4090987fe565c0de8204e3830f538144ec950576fea50aee1b42adbe9fc3ed5e7905dfa7979faaa20979def330dbebce548f3dcafc3e118cc9838526d
@@ -6079,6 +6100,7 @@ __metadata:
     tailwindcss: ^3.3.5
     three: 0.152.2
     three-mesh-bvh: 0.6.0
+    three-stdlib: ^2.29.1
     top-tool-package-reader: 0.0.3
     ts-jest: ^27.0.3
     ts-node: ^10.0.0
@@ -6452,6 +6474,13 @@ __metadata:
   peerDependencies:
     three: ">= 0.138.0 < 0.159.0"
   checksum: d37ae7438c637c4271d00c94389ae478565d72611cd3a6974cfc0985aaef51fa1357d56c7d853964c72f78e1363031e36a226a4d83b94e8b24c13d9144649a5f
+  languageName: node
+  linkType: hard
+
+"potpack@npm:^1.0.1":
+  version: 1.0.2
+  resolution: "potpack@npm:1.0.2"
+  checksum: 9dfdbbce012ce80842249abcdd89e20222eb8ae96beba8d578b7e41e78feefc7e33b5c72d46fb8dd3a1e382cb4da9c34574764d88aa8849ab36f542fd2088b42
   languageName: node
   linkType: hard
 
@@ -7550,6 +7579,22 @@ __metadata:
   peerDependencies:
     three: ">= 0.151.0"
   checksum: bafa9c912be4137ae5bb440584deff5953abd3196f7e4c38ecfb279ed16abc7a570d9e89a0d998d1e77dc0f532f8524f393b4bc0a0755e3debd1968ee05f97fe
+  languageName: node
+  linkType: hard
+
+"three-stdlib@npm:^2.29.1":
+  version: 2.29.1
+  resolution: "three-stdlib@npm:2.29.1"
+  dependencies:
+    "@types/draco3d": ^1.4.0
+    "@types/offscreencanvas": ^2019.6.4
+    "@types/webxr": ^0.5.2
+    draco3d: ^1.4.1
+    fflate: ^0.6.9
+    potpack: ^1.0.1
+  peerDependencies:
+    three: ">=0.128.0"
+  checksum: 76a6c2c5cd227ce201adb1e460235e6affe0d629937484b20dfdcea04ebdf2d1755d868f95459bcf07b5a6f212979dedf1f9142fbb0770766f90051617794d94
   languageName: node
   linkType: hard
 

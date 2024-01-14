@@ -1,7 +1,5 @@
 import * as THREE from "three";
-import { LineGeometry } from "three/examples/jsm/lines/LineGeometry";
-import { LineMaterial } from "three/examples/jsm/lines/LineMaterial";
-import { Line2 } from "three/examples/jsm/lines/Line2";
+import { Line2, LineGeometry, LineMaterial } from "three-stdlib";
 import { Simple2DMarker, Components } from "../../../core";
 import { Hideable, Event, Disposable, Component } from "../../../base-types";
 import { DimensionLabelClassName } from "../../LengthMeasurement";

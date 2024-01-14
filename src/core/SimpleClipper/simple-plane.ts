@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { TransformControls } from "three/examples/jsm/controls/TransformControls";
+import { TransformControls } from "three-stdlib";
 import { Component, Disposable, Event, Hideable } from "../../base-types";
 import { Components } from "../Components";
 
@@ -177,7 +177,9 @@ export class SimplePlane
 
   private initializeControls(controls: TransformControls) {
     controls.attach(this._helper);
+    // @ts-ignore
     controls.showX = false;
+    // @ts-ignore
     controls.showY = false;
     controls.setSpace("local");
     this.createArrowBoundingBox();

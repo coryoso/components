@@ -55,6 +55,7 @@
     "postprocessing": "^6.31.0",
     "stats.js": "^0.17.0",
     "three-mesh-bvh": "0.6.0",
+    "three-stdlib": "^2.29.1",
     "top-tool-package-reader": "0.0.3",
     "unzipit": "^1.4.3"
   },

@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { CSS2DRenderer } from "three/examples/jsm/renderers/CSS2DRenderer";
+import { CSS2DRenderer } from "three-stdlib";
 import { Disposable, Event, BaseRenderer } from "../../../base-types";
 import { Components } from "../../../core";
 

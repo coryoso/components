@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import * as MAPBOX from "mapbox-gl";
-import { CSS2DObject } from "three/examples/jsm/renderers/CSS2DRenderer";
+import { CSS2DObject } from "three-stdlib";
 import { MapboxBuilding, MapboxParameters } from "./src/types";
 import { Components, SimpleRaycaster, SimpleScene } from "../../core";
 import { MapboxRenderer } from "./src/mapbox-renderer";
