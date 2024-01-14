@@ -25,7 +25,6 @@
     "@types/three": "0.152.1",
     "@typescript-eslint/eslint-plugin": "^4.27.0",
     "@typescript-eslint/parser": "^4.27.0",
-    "bim-fragment": "1.3.1",
     "cpy-cli": "^3.1.1",
     "eslint": "^7.28.0",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -45,6 +44,7 @@
   },
   "dependencies": {
     "@popperjs/core": "2.11.8",
+    "bim-fragment": "https://github.com/coryoso/fragment",
     "camera-controls": "^1.36.0",
     "dexie": "^3.2.3",
     "dxf-writer": "^1.18.4",
@@ -60,7 +60,6 @@
     "unzipit": "^1.4.3"
   },
   "peerDependencies": {
-    "bim-fragment": "1.3.1",
     "three": "0.152.2",
     "web-ifc": "0.0.46"
   }

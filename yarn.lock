@@ -1900,15 +1900,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bim-fragment@npm:1.3.1":
+"bim-fragment@https://github.com/coryoso/fragment":
   version: 1.3.1
-  resolution: "bim-fragment@npm:1.3.1"
+  resolution: "bim-fragment@https://github.com/coryoso/fragment.git#commit=c5088a12d9434e9f40ea069749d85ae2f7db1dce"
   dependencies:
     flatbuffers: ^23.3.3
     three-mesh-bvh: 0.6.0
+    three-stdlib: ^2.29.1
   peerDependencies:
     three: 0.152.2
-  checksum: 25493ef7dba2cbba8edcd24333b43c3ccfc4b0795f0684e509454689e75fee15694273c458d3f1a4b85b40ab2970303f2bf7b4c3cc92f0dca8bb55949d0f85ac
+  checksum: e528759066faa498cdb3fd37c73e7a3abf4e37cbcb85f130e618782aea1d0ce86e52cf8aba3c8fe53e7ac21192dda2fb6deb2f89e1922226eddc5c2bfcfb62db
   languageName: node
   linkType: hard
 
@@ -6077,7 +6078,7 @@ __metadata:
     "@types/three": 0.152.1
     "@typescript-eslint/eslint-plugin": ^4.27.0
     "@typescript-eslint/parser": ^4.27.0
-    bim-fragment: 1.3.1
+    bim-fragment: "https://github.com/coryoso/fragment"
     camera-controls: ^1.36.0
     cpy-cli: ^3.1.1
     dexie: ^3.2.3
@@ -6108,7 +6109,6 @@ __metadata:
     unzipit: ^1.4.3
     web-ifc: 0.0.46
   peerDependencies:
-    bim-fragment: 1.3.1
     three: 0.152.2
     web-ifc: 0.0.46
   languageName: unknown
